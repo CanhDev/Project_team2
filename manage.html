@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Quản lý tour du lịch</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+      }
+
+      header {
+        background-color: #333;
+        color: #fff;
+        padding: 10px;
+        text-align: center;
+      }
+
+      nav {
+        background-color: #f2f2f2;
+        border: 1px solid #ccc;
+        display: flex;
+        justify-content: space-between;
+        padding: 10px;
+      }
+
+      nav ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        display: flex;
+      }
+
+      nav li {
+        margin: 0 10px;
+      }
+
+      nav a {
+        color: #333;
+        text-decoration: none;
+      }
+
+      main {
+        padding: 20px;
+      }
+
+      table {
+        border-collapse: collapse;
+        width: 100%;
+      }
+
+      th,
+      td {
+        text-align: left;
+        padding: 8px;
+        border-bottom: 1px solid #ddd;
+      }
+
+      th {
+        background-color: #333;
+        color: #fff;
+      }
+
+      tr:nth-child(even) {
+        background-color: #f2f2f2;
+      }
+
+      form {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin-bottom: 20px;
+      }
+
+      label {
+        font-weight: bold;
+        margin-right: 10px;
+      }
+
+      input[type="text"],
+      select {
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        margin-bottom: 10px;
+        width: 100%;
+      }
+
+      input[type="submit"] {
+        background-color: #333;
+        color: #fff;
+        padding: 10px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+      }
+
+      input[type="submit"]:hover {
+        background-color: #1a1a1a;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Quản lý tour du lịch</h1>
+    </header>
+    <nav>
+      <ul>
+        <li><a href="#">Quản lý tour</a></li>
+        <li><a href="#">Quản lý khách hàng</a></li>
+        <li><a href="#">Quản lý đặt tour</a></li>
+        <li><a href="./index.html">Home</a></li>
+      </ul>
+      <form>
+        <label>Tìm kiếm:</label>
+        <input type="text" name="search" />
+        <input type="submit" value="Tìm kiếm" />
+      </form>
+    </nav>
+    <main>
+      <h2>Thêm tour mới</h2>
+      <form>
+        <label>Tên tour:</label>
+        <input type="text" name="tourname" />
+        <label>Địa điểm:</label>
+        <select name="location">
+          <option value="">-- Chọn địa điểm --</option>
+          <option value="DaLat">Đà Lạt</option>
+          <option value="HaLong">Hạ Long</option>
+          <option value="PhuQuoc">Phú Quốc</option>
+        </select>
+        <label>Giá:</label>
+        <input type="text" name="price" />
+        <input type="submit" value="Thêm tour" />
+      </form>
+      <h2>Danh sách tour</h2>
+      <table>
+        <tr>
+          <th>ID</th>
+          <th>Tên tour</th>
+          <th>Địa điểm</th>
+          <th>Giá</th>
+          <th></th>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td>Đà Lạt</td>
+          <td>Đà Lạt</td>
+          <td>5,000,000 VND</td>
+          <td>
+            <button type="button" onclick="editTour(1)">Sửa</button>
+            <button type="button" onclick="deleteTour(1)">Xóa</button>
+          </td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>Hạ Long</td>
+          <td>Hạ Long</td>
+          <td>7,000,000 VND</td>
+          <td>
+            <button type="button" onclick="editTour(2)">Sửa</button>
+            <button type="button" onclick="deleteTour(2)">Xóa</button>
+          </td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>Phú Quốc</td>
+          <td>Phú Quốc</td>
+          <td>9,000,000 VND</td>
+          <td>
+            <button type="button" onclick="editTour(3)">Sửa</button>
+            <button type="button" onclick="deleteTour(3)">Xóa</button>
+          </td>
+        </tr>
+      </table>
+      <script>
+        function editTour(id) {
+          // Lấy thông tin tour từ id và hiển thị trong biểu mẫu sửa tour
+          var tour = getTourById(id);
+          document.querySelector('form#edit-tour-form input[name="id"]').value =
+            id;
+          document.querySelector(
+            'form#edit-tour-form input[name="tourname"]'
+          ).value = tour.name;
+          document.querySelector(
+            'form#edit-tour-form select[name="location"]'
+          ).value = tour.location;
+          document.querySelector(
+            'form#edit-tour-form input[name="price"]'
+          ).value = tour.price;
+
+          // Hiển thị biểu mẫu sửa tour
+          document.querySelector("form#edit-tour-form").style.display = "block";
+        }
+
+        function deleteTour(id) {
+          // Xác nhận xóa tour
+          if (confirm("Bạn có chắc chắn muốn xóa tour này không?")) {
+            // Xóa tour khỏi danh sách
+            var tourRow = document.querySelector(
+              'table#tour-list tr[data-tour-id="' + id + '"]'
+            );
+            tourRow.parentNode.removeChild(tourRow);
+          }
+        }
+
+        function getTourById(id) {
+          // Giả định rằng ta có một mảng các tour
+          var tours = [
+            {
+              id: 1,
+              name: "Đà Lạt",
+              location: "Đà Lạt",
+              price: "5,000,000 VND",
+            },
+            {
+              id: 2,
+              name: "Hạ Long",
+              location: "Hạ Long",
+              price: "7,000,000 VND",
+            },
+            {
+              id: 3,
+              name: "Phú Quốc",
+              location: "Phú Quốc",
+              price: "9,000,000 VND",
+            },
+          ];
+
+          // Tìm tour theo id
+          for (var i = 0; i < tours.length; i++) {
+            if (tours[i].id === id) {
+              return tours[i];
+            }
+          }
+
+          return null;
+        }
+      </script>
+    </main>
+  </body>
+</html>

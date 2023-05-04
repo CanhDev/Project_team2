@@ -1,0 +1,1479 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="./assets/fonts/themify-icons/themify-icons.css"
+    />
+    <link rel="stylesheet" href="./assets/css/base.css" />
+    <link rel="stylesheet" href="./assets/css/grid.css" />
+    <link rel="stylesheet" href="./assets/css/header.css" />
+    <link rel="stylesheet" href="./assets/css/modal.css" />
+    <link rel="stylesheet" href="./assets/css/container.css" />
+    <link rel="stylesheet" href="./assets/css/footer.css" />
+    <link rel="stylesheet" href="./assets/css/responsive.css" />
+  </head>
+  <body>
+    <div class="app">
+      <header id="header">
+        <div class="headerT">
+          <div class="headerT__contact">
+            <div class="headerT__contact-email">
+              <i class="fa-regular fa-envelope"></i>
+              <p>cbnn2002@gmail.com</p>
+            </div>
+            <div class="headerT__contact-phone">
+              <i class="fa-solid fa-phone"></i>
+              <p>Call Us : +84-342-875-989</p>
+            </div>
+          </div>
+          <a href="./index.html" class="headerT__logo">
+            <img src="./assets/imgs/headerlogo.png" alt="" />
+          </a>
+          <div class="headerT__option">
+            <div class="headerT__option-languages hideonmobile">
+              <span
+                >Languages
+                <i class="fa-solid fa-chevron-down"></i>
+                <ul class="language-list tab-list">
+                  <li class="tab-item tab-item--avtive">English</li>
+                  <li class="tab-item">Tiếng Việt</li>
+                  <li class="tab-item">French</li>
+                  <li class="tab-item">German</li>
+                  <li class="tab-item">Italian</li>
+                  <li class="tab-item">Spanlish</li>
+                </ul>
+              </span>
+            </div>
+            <button class="hideonmobile headerT__option-login btn-register--js">
+              Sign up
+            </button>
+          </div>
+          <!-- mobile-menu -->
+          <div class="menuMB hideonpc">
+            <i class="ti-menu menuMB__icon"></i>
+          </div>
+          <div class="overlayMB hideonpc"></div>
+          <ul class="menu-listMB hideonpc">
+            <li class="menu-listMB-items">
+              <a href="#" class="menu-listMB-items-link">HOME</a>
+            </li>
+            <li class="menu-listMB-items">
+              <a href="#explore" class="menu-listMB-items-link">EXPLORE</a>
+            </li>
+            <li class="menu-listMB-items">
+              <a href="#tours" class="menu-listMB-items-link">TOURS</a>
+            </li>
+            <li class="menu-listMB-items">
+              <a href="#travel__guide" class="menu-listMB-items-link">GUIDE</a>
+            </li>
+            <li class="menu-listMB-items">
+              <a href="#best-tours" class="menu-listMB-items-link"
+                >BEST-TOURS</a
+              >
+            </li>
+            <li class="menu-listMB-items">
+              <a href="./contact.html" class="menu-listMB-items-link"
+                >CONTACT-US</a
+              >
+            </li>
+            <li class="menu-listMB-items menu-listMB-items-link">
+              <button class="headerT__option-login btn-register--js">
+                Sign up
+              </button>
+            </li>
+          </ul>
+        </div>
+        <div class="headerB hideonmobile">
+          <div class="grid wide">
+            <div class="row">
+              <div class="menu">
+                <ul class="menu__list">
+                  <li class="menu__list-items">
+                    <a href="#" class="menu__list-items-link">HOME</a>
+                  </li>
+                  <li class="menu__list-items">
+                    <a href="#explore" class="menu__list-items-link">EXPLORE</a>
+                  </li>
+                  <li class="menu__list-items">
+                    <a href="#tours" class="menu__list-items-link">TOURS</a>
+                  </li>
+                  <li class="menu__list-items">
+                    <a href="#travel__guide" class="menu__list-items-link"
+                      >GUIDE</a
+                    >
+                  </li>
+                  <li class="menu__list-items">
+                    <a href="#best-tours" class="menu__list-items-link"
+                      >BEST-TOURS</a
+                    >
+                  </li>
+                  <li class="menu__list-items">
+                    <a href="./contact.html" class="menu__list-items-link"
+                      >CONTACT-US</a
+                    >
+                  </li>
+                  <li class="menu__list-items">
+                    <i class="ti-search search-header-icon"></i>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="header-search">
+          <div class="grid wide">
+            <div class="row">
+              <div class="col l-12 c-12">
+                <input
+                  class="header-search__input"
+                  placeholder="|Search on site..."
+                  type="text"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <div id="app__container">
+        <div
+          style="background-image: url('./assets/imgs/logo1.png')"
+          class="slider"
+        >
+          <div class="slider-desc">
+            <h4 class="slider__heading">Vietnam</h4>
+            <p class="slider__title">Sensing the Timeless Charm of Vietnam</p>
+          </div>
+        </div>
+        <div id="explore" class="explore">
+          <div class="grid wide">
+            <div class="row">
+              <div class="col l-6 m-12 c-12">
+                <div class="explore-left">
+                  <h4 class="app-heading">Explore Our VN-Booking Tours</h4>
+                  <p class="app-desc">
+                    Vietnam is a unique country in Southeast Asia, where
+                    traditions that are thousands of years are still alive. The
+                    country is fast developing and old and new go in pair. We
+                    offer you our vast knowledge and expertise in Vietnam,
+                    bringing you the most authentic and bespoke holidays in
+                    Vietnam. Discover our luxury Vietnam tours and our Vietnam
+                    Holiday Packages, where you can combine nature, adventure,
+                    culture and beach holidays easily. Include in your holiday
+                    to Vietnam an incredible Halong Bay cruise, a visit to many
+                    UNESCO World Heritage sites such as Hue and Hoi An and
+                    uncover the mysteries of the Mekong Delta in the South.
+                    Don’t forget to include the unmissable rice terraces in Sapa
+                    or Mai Chau and a relaxing time in Hoi An, the little
+                    riverside town in the Central area of Vietnam.
+                  </p>
+                  <div class="explore-left-footer">
+                    <span class="explore-item">
+                      8 <br />
+                      <span class="explore-item-title"
+                        >World Heritage Sites</span
+                      >
+                    </span>
+                    <span class="explore-item">
+                      54
+                      <br />
+                      <span class="explore-item-title">Ethnic Minoritie</span>
+                    </span>
+                    <span class="explore-item">
+                      63 <br />
+                      <span class="explore-item-title">Cities</span>
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <div class="col l-6 m-12 c-12">
+                <div
+                  style="background-image: url('./assets/imgs/Vietnam-01.png')"
+                  class="explore-right"
+                ></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="tours" class="tours">
+          <div class="grid wide">
+            <div class="row">
+              <div class="col l-12 c-12 m-12">
+                <div class="tour-container">
+                  <h4 class="app-heading">Our VN-Booking Tours</h4>
+                  <div class="tour-bar">
+                    <div class="tour-options">
+                      <h2 class="tour-options__title">Travel Style</h2>
+                      <div class="tour-options-current">
+                        <h2 class="tour-title">All Travel Styles</h2>
+                        <i class="ti-arrow-down"></i>
+                        <ul class="tour-options-lists tab-list">
+                          <li class="tab-item tab-item--avtive">
+                            All Travel Styles
+                          </li>
+                          <li class="tab-item">Adventure Tours</li>
+                          <li class="tab-item">Biking & Trekking</li>
+                          <li class="tab-item">Classic Tours</li>
+                          <li class="tab-item">Culinary Tours</li>
+                          <li class="tab-item">Day Trips</li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="tour-options">
+                      <h2 class="tour-options__title">Duration of the trip</h2>
+                      <div class="tour-options-current">
+                        <h2 class="tour-title">All Durations</h2>
+                        <i class="ti-arrow-down"></i>
+                        <ul class="tour-options-lists tab-list">
+                          <li class="tab-item tab-item--avtive">
+                            All Durations
+                          </li>
+                          <li class="tab-item">< 5 days</li>
+                          <li class="tab-item">5 - 7 days</li>
+                          <li class="tab-item">7 - 10 days</li>
+                          <li class="tab-item">10 - 15 days</li>
+                          <li class="tab-item">> 15 days</li>
+                        </ul>
+                      </div>
+                    </div>
+                    <button class="btn2 btn2--size-l btn2--primary">
+                      FIND TOUR
+                    </button>
+                  </div>
+                  <div class="card-tour">
+                    <div class="row">
+                      <div class="col l-4 c-12 m-6">
+                        <div class="card-wrapper">
+                          <div class="card-wrapper__img">
+                            <img
+                              src="./assets/imgs/a1.jpg"
+                              alt=""
+                              class="card__img"
+                            />
+                          </div>
+                          <div class="card-body">
+                            <p class="card-days">2 DAYS</p>
+                            <h4 class="card-title">
+                              The Best of The Best Vietnam for Post Pandemic
+                              Travelers. Discover, Explore, Indulge, Relax and
+                              Immerse in Natural and Cultural Heritage. Enjoy
+                              Nature and Culture and Stay in Our Hand-Picked
+                            </h4>
+                            <div class="card-desc">
+                              <p class="card-price">$999</p>
+                              <button
+                                class="btn-tour--js btn-tour btn2 btn--size-s btn2--primary"
+                              >
+                                Booking
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col l-4 c-12 m-6">
+                        <div class="card-wrapper">
+                          <div class="card-wrapper__img">
+                            <img
+                              src="./assets/imgs/a2.jpg"
+                              alt=""
+                              class="card__img"
+                            />
+                          </div>
+                          <div class="card-body">
+                            <p class="card-days">7 DAYS</p>
+                            <h4 class="card-title">
+                              Saigon’s Based Travelers Explore Intriguing Cu Chi
+                              Tunnels, Amazing Mekong Delta and Back to Hotel
+                              Comfort for Lifestyle Experiences in the
+                              Metropolitan City of Vietnam
+                            </h4>
+                            <div class="card-desc">
+                              <p class="card-price">$1000</p>
+                              <button
+                                class="btn-tour--js btn-tour btn2 btn--size-s btn2--primary"
+                              >
+                                Booking
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col l-4 c-12 m-6">
+                        <div class="card-wrapper">
+                          <div class="card-wrapper__img">
+                            <img
+                              src="./assets/imgs/a3.jpg"
+                              alt=""
+                              class="card__img"
+                            />
+                          </div>
+                          <div class="card-body">
+                            <p class="card-days">7 DAYS</p>
+                            <h4 class="card-title">
+                              Unlock the treasures of Hanoi Capital, Enjoy
+                              Natural Walks, Encounter Locals and Immerse
+                              yourselves in the Natural and Cultural Heritage in
+                              Halong and Lan Ha Bays
+                            </h4>
+                            <div class="card-desc">
+                              <p class="card-price">$899</p>
+                              <button
+                                class="btn-tour--js btn-tour btn2 btn--size-s btn2--primary"
+                              >
+                                Booking
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col l-4 c-12 m-6">
+                        <div class="card-wrapper">
+                          <div class="card-wrapper__img">
+                            <img
+                              src="./assets/imgs/a4.jpg"
+                              alt=""
+                              class="card__img"
+                            />
+                          </div>
+                          <div class="card-body">
+                            <p class="card-days">3 DAYS</p>
+                            <h4 class="card-title">
+                              A Journey of Discovery in 5 Days in the Centre of
+                              Vietnam, Taste Local Spicy Food, Relax in Danang
+                              Beach and Visit its Highlights, Discover Two
+                              World’s Heritage Listed Sites Hue and Hoi An.
+                            </h4>
+                            <div class="card-desc">
+                              <p class="card-price">$500</p>
+                              <button
+                                class="btn-tour--js btn-tour btn2 btn--size-s btn2--primary"
+                              >
+                                Booking
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col l-4 c-12 m-6">
+                        <div class="card-wrapper">
+                          <div class="card-wrapper__img">
+                            <img
+                              src="./assets/imgs/a5.jpg"
+                              alt=""
+                              class="card__img"
+                            />
+                          </div>
+                          <div class="card-body">
+                            <p class="card-days">7 DAYS</p>
+                            <h4 class="card-title">
+                              Discover old and new capitals Hoa Lu and Hanoi,
+                              Stay, Dine, Cruise, Explore A Masterpiece in The
+                              Natural Wonder Lan Ha Bay with Heritage Binh Chuan
+                              Cat Ba Archipelago 5 days
+                            </h4>
+                            <div class="card-desc">
+                              <p class="card-price">$999</p>
+                              <button
+                                class="btn-tour--js btn-tour btn2 btn--size-s btn2--primary"
+                              >
+                                Booking
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col l-4 c-12 m-6">
+                        <div class="card-wrapper">
+                          <div class="card-wrapper__img">
+                            <img
+                              src="./assets/imgs/a6.jpg"
+                              alt=""
+                              class="card__img"
+                            />
+                          </div>
+                          <div class="card-body">
+                            <p class="card-days">2 DAYS</p>
+                            <h4 class="card-title">
+                              Encounter Vietnam Culture, Nature, Food and Local
+                              Lifestyle in 13 Days
+                            </h4>
+                            <div class="card-desc">
+                              <p class="card-price">$799</p>
+                              <button
+                                class="btn-tour--js btn-tour btn2 btn--size-s btn2--primary"
+                              >
+                                Booking
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col l-4 c-12 m-6">
+                        <div class="card-wrapper">
+                          <div class="card-wrapper__img">
+                            <img
+                              src="./assets/imgs/a7.jpg"
+                              alt=""
+                              class="card__img"
+                            />
+                          </div>
+                          <div class="card-body">
+                            <p class="card-days">7 DAYS</p>
+                            <h4 class="card-title">
+                              Discover, Explore, Indulge, Relax and Immerse in
+                              Natural and Cultural Vietnam Heritage in 10 Days
+                            </h4>
+                            <div class="card-desc">
+                              <p class="card-price">$699</p>
+                              <button
+                                class="btn-tour--js btn-tour btn2 btn--size-s btn2--primary"
+                              >
+                                Booking
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col l-4 c-12 m-6">
+                        <div class="card-wrapper">
+                          <div class="card-wrapper__img">
+                            <img
+                              src="./assets/imgs/a8.jpg"
+                              alt=""
+                              class="card__img"
+                            />
+                          </div>
+                          <div class="card-body">
+                            <p class="card-days">2 DAYS</p>
+                            <h4 class="card-title">
+                              Premium Vietnam Unique Cruise, Heritage Tour and
+                              Handpicked Hotels 11 days
+                            </h4>
+                            <div class="card-desc">
+                              <p class="card-price">$999</p>
+                              <button
+                                class="btn-tour--js btn-tour btn2 btn--size-s btn2--primary"
+                              >
+                                Booking
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col l-4 c-12 m-6">
+                        <div class="card-wrapper">
+                          <div class="card-wrapper__img">
+                            <img
+                              src="./assets/imgs/a9.jpg"
+                              alt=""
+                              class="card__img"
+                            />
+                          </div>
+                          <div class="card-body">
+                            <p class="card-days">5 DAYS</p>
+                            <h4 class="card-title">
+                              Hoi An, the little town by the Central coastline,
+                              has long been among the top destinations for
+                              Vietnam tours. This land not only possesses
+                              tranquil landsc…
+                            </h4>
+                            <div class="card-desc">
+                              <p class="card-price">$989</p>
+                              <button
+                                class="btn-tour--js btn-tour btn2 btn--size-s btn2--primary"
+                              >
+                                Booking
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <button class="tour-footer-btn btn2 btn--size-l">
+                    View More
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="travel__guide" class="travel__guide">
+          <div class="grid wide">
+            <h4 class="guide__heading app-heading">Travel Guide</h4>
+            <div class="row">
+              <div class="col l-8 m-12 c-12">
+                <div class="guide-left">
+                  <ul class="guide-list">
+                    <li class="guide-item">
+                      <div class="guide-item-wrapper">
+                        <h4 class="guide-item__title">
+                          1. Why to choose VN-booking Tours?
+                        </h4>
+                        <i class="guide-item__icon ti-angle-down"></i>
+                      </div>
+                      <div
+                        id="style-4"
+                        class="guide-item-desc-wrapper scrollbar open-guide"
+                      >
+                        <div class="guide-item-desc">
+                          <h4 class="guide-item-desc__heading">
+                            100% Tailor-made itinerary
+                          </h4>
+                          <p class="guide-item-desc__title">
+                            VN-booking Tours mean seeing the world exactly how
+                            you want to see it, on an itinerary customized for
+                            you by the best local travel experts. When traveling
+                            with us, the travel consultants will work closely
+                            with you to create a tailor-made journey of a
+                            lifetime, optimized to make sure you get the most
+                            out of every moment. No matter what you like,
+                            admiring Halong Bay from a private helicopter or
+                            experiencing the farmer life in Hoi An, we can
+                            arrange for you. We provide the knowledge, the
+                            access, and the guidance to show you the best that
+                            Vietnam offers.
+                          </p>
+                        </div>
+                        <div class="guide-item-desc">
+                          <h4 class="guide-item-desc__heading">
+                            24/7 Personal support
+                          </h4>
+                          <p class="guide-item-desc__title">
+                            We take into consideration every little detail such
+                            as mobility issues or dietary restrictions and
+                            choose the most appropriate accommodation for every
+                            type of travelers. We will acknowledge every inquiry
+                            within 12 hours and provide a quote for your Vietnam
+                            Cambodia itinerary within 24 hours. You will have
+                            24/7 support on the ground and a dedicated staff
+                            member from arrival to departure. In addition, we
+                            have a 24-hour dedicated hotline for our clients in
+                            every country. Therefore, your trips to Vietnam and
+                            Cambodia will be assured of safety, comfort, and
+                            excellence.
+                          </p>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="guide-item">
+                      <div class="guide-item-wrapper">
+                        <h4 class="guide-item__title">
+                          2. What are in a VN-booking tour packages?
+                        </h4>
+                        <i class="guide-item__icon ti-angle-down"></i>
+                      </div>
+                      <div
+                        id="style-4"
+                        class="guide-item-desc-wrapper scrollbar"
+                      >
+                        <div class="guide-item-desc">
+                          <h4 class="guide-item-desc__heading">
+                            -Authentic experience
+                          </h4>
+                          <p class="guide-item-desc__title">
+                            Explore Stunning Natural Beauty (highlands &
+                            mountains), Admire Ancient Architecture like Hue,
+                            Hoian. Enjoy Floating Markets with Locals, Taste
+                            Superb Local Cuisine, Wander on Primitive Islands
+                            and Beaches, Be closer to Diversified Culture, Touch
+                            the World Heritages, what's more?
+                          </p>
+                        </div>
+                        <div class="guide-item-desc">
+                          <h4 class="guide-item-desc__heading">
+                            Private & luxury transport:
+                          </h4>
+                          <p class="guide-item-desc__title">
+                            When joining a trip, moving from one destination to
+                            other destinations is unavoidable. Especially on a
+                            long trip, you may spend many hours on your vehicle.
+                            Therefore, vehicle stick really sticks you on every
+                            trip, that is the reason why you should choose a
+                            suitable and comfortable vehicle. Usually, you
+                            cannot choose which kind of transportation you
+                            prefer using in a normal tourism agency. However, if
+                            you are on a luxury trip, you can consider and
+                            choose the most comfortable vehicle for your trip.
+                            For example, in VN-booking, we own a modern fleet of
+                            vehicles from standards car to luxury Mercedes Benz.
+                            Private jets, yacht, helicopter, and many luxury
+                            transportations are always willing to serve you!
+                          </p>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="guide-item">
+                      <div class="guide-item-wrapper">
+                        <h4 class="guide-item__title">
+                          3. Benefits of VN-booking tours to Vietnam?
+                        </h4>
+                        <i class="guide-item__icon ti-angle-down"></i>
+                      </div>
+                      <div
+                        id="style-4"
+                        class="guide-item-desc-wrapper scrollbar"
+                      >
+                        <div class="guide-item-desc">
+                          <h4 class="guide-item-desc__heading">
+                            Customized Experience
+                          </h4>
+                          <p class="guide-item-desc__title">
+                            It is time for real-life movie set to yourself after
+                            the busy life. As small countries lying on the east
+                            coast of the Pacific Ocean and possessing naturally
+                            favorable conditions, Vietnam is the perfect choice
+                            for a retreat with many different kinds of
+                            attractions and tours. Especially, naturally blessed
+                            with over 4,000 islands, it is no surprise when
+                            Vietnam has become such a hit with tourists wishing
+                            to spend their vacation on an isolated and peaceful
+                            island. Clear crystal blue water, white smooth sand
+                            beaches, charming scenes together with unique local
+                            life create an irresistible appeal to every tourist
+                            coming to these islands at the first sight. This is
+                            really a great chance to relax or just simply spend
+                            quality time enjoying a new place together away from
+                            the bustle and hustle of modern life.
+                          </p>
+                        </div>
+                        <div class="guide-item-desc">
+                          <h4 class="guide-item-desc__heading">
+                            Lower scams with local reviews, tips & tricks
+                          </h4>
+                          <p class="guide-item-desc__title">
+                            Private guides will be your interpreters in case you
+                            cannot understand and communicate in the local
+                            language, which will minimize the culture barriers
+                            and embarrassments, especially in limited time.
+                            Moreover, local tour guides enable you to explore
+                            primitive landscapes and several spots unavailable
+                            on the Internet. Luxury tour operators always
+                            strongly confident in their knowledgeable staff and
+                            local experts are one of the most outstanding staffs
+                            here. Local experts acknowledge impressively about
+                            all destination. Vietnam still exists many corners
+                            that even media has not approached. Therefore, local
+                            experts can bring you to go to every corner of
+                            Vietnam and find out the wonderful hiding places
+                            which are suitable the most with your demand.
+                          </p>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="guide-item">
+                      <div class="guide-item-wrapper">
+                        <h4 class="guide-item__title">
+                          4. Highlight of Vietnamese Culture
+                        </h4>
+                        <i class="guide-item__icon ti-angle-down"></i>
+                      </div>
+                      <div
+                        id="style-4"
+                        class="guide-item-desc-wrapper scrollbar"
+                      >
+                        <div class="guide-item-desc">
+                          <h4 class="guide-item-desc__heading">
+                            Central Highlands - the mysterious land
+                          </h4>
+                          <p class="guide-item-desc__title">
+                            As its name indicates, Central Highlands is located
+                            in the Middle of Vietnam, of which more than 95% is
+                            mountainous terrain. If you are a mountain-lover, it
+                            would be a big regret if you travel to Vietnam but
+                            do not pay a visit to this beautiful region. The
+                            mountains seem to dominate the horizon whatever
+                            directions we look. They look like huge green
+                            dinosaurs which had laid down for a nap and would
+                            never wake up. Taking a deeper discovery into the
+                            jungle, you will be amazed by its scenic beauty with
+                            different types of trees and flowers and the
+                            marvelous waterfalls. The Central Highlands is also
+                            famous for their high-valued cultures. The ethnic
+                            people here still well maintain its traditional
+                            lifestyle as well as cultural activities. The houses
+                            on stilts, heroic epics and the Space of Gong are
+                            what appear on our minds when talking about this
+                            area. Matriarchal society can be seen in some groups
+                            such as Ede and Mnong. Especially, the traditional
+                            music of the ethnic people, with unique musical
+                            instruments such as T’rung and Klong Put, is
+                            undoubtedly a huge appeal of Central Highlands in
+                            particular and Vietnam in general. Thanks to its
+                            high cultural value, Gong Culture has been
+                            recognized as a UNESCO Intangible Cultural Heritage.
+                          </p>
+                        </div>
+                        <div class="guide-item-desc">
+                          <h4 class="guide-item-desc__heading">
+                            Hue – a historic and dreamy land
+                          </h4>
+                          <p class="guide-item-desc__title">
+                            Located along the banks of the Huong River, Hue, the
+                            regional economic, cultural, touristic, scientific,
+                            specialized health, education and training hub of
+                            central Viet Nam is an attractive destination. Hue
+                            is famous for its temples, bastions, mausoleums,
+                            architecture, and natural landscapes mostly covered
+                            by a layer of green moss, which creates a relaxing
+                            sensation. The most noticeable place is Hue Citadel.
+                            Situated on the northern bank of the Huong River,
+                            Hue Citadel was built on a surface area of more than
+                            500 ha, including the Hoang Thanh and Tu Cam Thanh
+                            Citadel. It was the administrative center of the
+                            Nguyen dynasty and served as the living quarters of
+                            the Emperor and the Royal Family. The Citadel
+                            belongs to the old Imperial Capital of Hue,
+                            recognized by UNESCO as a World Cultural Heritage
+                            site in 1993. For more places, feel free to contact
+                            Luxury Travel.
+                          </p>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="guide-item">
+                      <div class="guide-item-wrapper">
+                        <h4 class="guide-item__title">
+                          5. Where to stay in VN-booking? (Top luxury hotels &
+                          luxury beach resorts in Vietnam)
+                        </h4>
+                        <i class="guide-item__icon ti-angle-down"></i>
+                      </div>
+                      <div
+                        id="style-4"
+                        class="guide-item-desc-wrapper scrollbar"
+                      >
+                        <div class="guide-item-desc">
+                          <h4 class="guide-item-desc__heading">
+                            Top Hotels in Vietnam for your VN-booking Tours
+                          </h4>
+                          <p class="guide-item-desc__title">
+                            A welcome retreat from the bustling city center, the
+                            hotel is uniquely placed over the serene waters of
+                            West Lake while only minutes from Hanoi’s famous Old
+                            Quarter. Discover absolute tranquility at this
+                            luxurious urban resort with Tai-Chi lessons beside
+                            our outdoor pool; savor the finest cuisine at the
+                            hotel's Café Du Lac & Milan restaurants, and relax
+                            in contemporary Vietnamese designed guest rooms and
+                            suites with spectacular views from your own private
+                            balcony. The combination of the tranquil lake,
+                            spacious luxurious accommodations, facilities, and
+                            attentive Vietnamese hospitality blend together to
+                            make this the perfect place to stay for both the
+                            corporate and leisure traveler.
+                          </p>
+                        </div>
+                        <div class="guide-item-desc">
+                          <h4 class="guide-item-desc__heading">
+                            Sheraton Hotel Hanoi - Luxury hotel in Hanoi,
+                            Vietnam
+                          </h4>
+                          <p class="guide-item-desc__title">
+                            Close to the bustle and excitement of the city,
+                            Sheraton Hanoi Hotel is surrounded by lush gardens,
+                            sweeping lawns, and tranquil courtyards. This
+                            peaceful oasis features picturesque views of West
+                            Lake and is less than 10 minutes from downtown
+                            Hanoi. Truly “resort within the capital city of
+                            Vietnam”, the hotel provides the perfect balance
+                            between tranquility and convenience. Clear your mind
+                            with an early morning swim or a sauna retreat at
+                            sunset in the lush garden. Focus on your body during
+                            a vigorous workout with one of our certified
+                            personal trainers in our fitness center, or play a
+                            set of tennis on our lighted outdoor court.
+                          </p>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="guide-item">
+                      <div class="guide-item-wrapper">
+                        <h4 class="guide-item__title">
+                          6. When is the best time to visit Vietnam?
+                        </h4>
+                        <i class="guide-item__icon ti-angle-down"></i>
+                      </div>
+                      <div
+                        id="style-4"
+                        class="guide-item-desc-wrapper scrollbar"
+                      >
+                        <div class="guide-item-desc">
+                          <h4 class="guide-item-desc__heading">
+                            Best time to visit Vietnam is from September to
+                            April
+                          </h4>
+                          <p class="guide-item-desc__title">
+                            Vietnam's elongated shape, stretching from the
+                            tropics to the subtropics zone, accounts for the
+                            varied climate in the country. Vietnam is a
+                            year-round destination when one part of Vietnam is
+                            cloudy and rainy, there are other parts of the
+                            country that can be sunny and warm. North Vietnam
+                            enjoys four seasons, meanwhile Central and South
+                            have four, rainy and dry seasons. Heat and humidity
+                            are typical weather of Vietnam. Since Vietnam covers
+                            several climatic zones, the weather can change
+                            significantly traveling north to south. Most
+                            travelers come to Vietnam from September to April.
+                          </p>
+                        </div>
+                        <div class="guide-item-desc">
+                          <h4 class="guide-item-desc__heading">
+                            The peak travel season in Vietnam
+                          </h4>
+                          <p class="guide-item-desc__title">
+                            The peak season is usually from December to
+                            February, especially on Chrismas Holiday (X-Mas),
+                            New Year holidays and Lunar Traditional New Year
+                            holidays (Tet Holiday)
+                          </p>
+                        </div>
+                        <div class="guide-item-desc">
+                          <h4 class="guide-item-desc__heading">
+                            How about the summertime in Vietnam?
+                          </h4>
+                          <p class="guide-item-desc__title">
+                            The summertime which coincides with the rainy season
+                            in Vietnam runs from May to August? Is it a good
+                            time for holidays in Vietnam? Discerning visitors
+                            often plan a journey to Vietnam with a single query
+                            in the head,“Is the summer ia good time to discover
+                            the place and enjoy beach holiday getaways?” The
+                            simple answer is, absolutely!”
+                          </p>
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col l-4 m-12 c-12">
+                <div class="guide-right">
+                  <div class="guide-cards">
+                    <div class="guide-card1">
+                      <h4 class="guide-card__heading">Meet team-08</h4>
+                      <img
+                        src="./assets/imgs/logo-haui-size.png"
+                        alt=""
+                        class="guide-card__img"
+                      />
+                      <h4 class="guide-card__title">Welcome!</h4>
+                      <p class="guide-card__desc">
+                        We are proud to represent VN-Booking and to help you
+                        find your perfect vacation. Before you book elsewhere,
+                        check with us please! You will receive added benefit of
+                        booking with Luxury Travel as well
+                      </p>
+                    </div>
+                    <div class="guide-card1">
+                      <a
+                        href="tel:+84-342-875-989 "
+                        class="guide-card2__heading guide-card__heading"
+                        >+84-342-875-989</a
+                      >
+                      <p class="guide-card2 guide-card__desc">
+                        We offer luxury tour packages to Southeast Asia
+                      </p>
+                      <div class="guide-card2_icons">
+                        <i class="ti-facebook"></i>
+                        <i class="ti-github"></i>
+                      </div>
+                      <p class="guide-card2_desc guide-card__desc">
+                        canhng2002tanky@gmail.com
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="best-tours" class="best-tours">
+          <div class="grid">
+            <h4 class="Btour-heading app-heading">
+              Best destinations in Vietnam
+            </h4>
+            <button class="pre-btn">
+              <img src="./assets/imgs/arrow.png" alt="" />
+            </button>
+            <button class="nxt-btn">
+              <img src="./assets/imgs/arrow.png" alt="" />
+            </button>
+            <div class="Btour-container">
+              <div class="row not-wrap">
+                <div class="col l-2-4 m-4">
+                  <div class="Btour-wrapper card-wrapper">
+                    <div class="card-wrapper__img">
+                      <img
+                        src="./assets/imgs/bhanoi.jpg"
+                        alt=""
+                        class="Btour__img card__img"
+                      />
+                    </div>
+                    <div class="Btour-body card-body">
+                      <h4 class="Btour__heading card-title">HaNoi</h4>
+                      <p class="Btour-desc">
+                        The charming capital of Vietnam is full of places to see
+                        and many activities and tourist destination for Ha Noi
+                        Tour. This is a classic city where ancient Vi…
+                      </p>
+                      <button class="Btour-btn btn-tour--js btn btn--size-l">
+                        Booking
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div class="col l-2-4 m-4">
+                  <div class="Btour-wrapper card-wrapper">
+                    <div class="card-wrapper__img">
+                      <img
+                        src="./assets/imgs/bhoian.jpg"
+                        alt=""
+                        class="Btour__img card__img"
+                      />
+                    </div>
+                    <div class="Btour-body card-body">
+                      <h4 class="Btour__heading card-title">Hoi An</h4>
+                      <p class="Btour-desc">
+                        Hoi An, the little town by the Central coastline, has
+                        long been among the top destinations for Vietnam tours.
+                        This land not only possesses tranquil landsc…
+                      </p>
+                      <button class="Btour-btn btn-tour--js btn btn--size-l">
+                        Booking
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div class="col l-2-4 m-4">
+                  <div class="Btour-wrapper card-wrapper">
+                    <div class="card-wrapper__img">
+                      <img
+                        src="./assets/imgs/bsapa.jpg"
+                        alt=""
+                        class="Btour__img card__img"
+                      />
+                    </div>
+                    <div class="Btour-body card-body">
+                      <h4 class="Btour__heading card-title">Sapa Tour</h4>
+                      <p class="Btour-desc">
+                        Tucked high in Vietnam’s northern mountainous region
+                        close to the Chinese border, the former French military
+                        outpost of Sapa oﬀers some of Vie…
+                      </p>
+                      <button class="Btour-btn btn-tour--js btn btn--size-l">
+                        Booking
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div class="col l-2-4 m-4">
+                  <div class="Btour-wrapper card-wrapper">
+                    <div class="card-wrapper__img">
+                      <img
+                        src="./assets/imgs/bhalong.jpg"
+                        alt=""
+                        class="Btour__img card__img"
+                      />
+                    </div>
+                    <div class="Btour-body card-body">
+                      <h4 class="Btour__heading card-title">Ha Long</h4>
+                      <p class="Btour-desc">
+                        Officially recognized as one of the New Seven Natural
+                        Wonders of the World in 2012, Halong Bay is a must-see
+                        on anyone’s itinerary in Vietnam, tha…
+                      </p>
+                      <button class="Btour-btn btn-tour--js btn btn--size-l">
+                        Booking
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div class="col l-2-4 m-4">
+                  <div class="Btour-wrapper card-wrapper">
+                    <div class="card-wrapper__img">
+                      <img
+                        src="./assets/imgs/bdanang.jpg"
+                        alt=""
+                        class="Btour__img card__img"
+                      />
+                    </div>
+                    <div class="Btour-body card-body">
+                      <h4 class="Btour__heading card-title">Da Nang</h4>
+                      <p class="Btour-desc">
+                        Da Nang has stepped into the tourism limelight as a much
+                        sought after destination for holidaymakers. For many
+                        travel experts, Da Nang is more appeali…
+                      </p>
+                      <button class="Btour-btn btn-tour--js btn btn--size-l">
+                        Booking
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div class="col l-2-4 m-4">
+                  <div class="Btour-wrapper card-wrapper">
+                    <div class="card-wrapper__img">
+                      <img
+                        src="./assets/imgs/bphuquoc.jpg"
+                        alt=""
+                        class="Btour__img card__img"
+                      />
+                    </div>
+                    <div class="Btour-body card-body">
+                      <h4 class="Btour__heading card-title">
+                        Phu Quoc holidays
+                      </h4>
+                      <p class="Btour-desc">
+                        Phu Quoc is what Phuket would be if it hadn’t been
+                        overrun by development. Phu Quoc’s beaches were voted
+                        the cleanest and most beautiful in the world…
+                      </p>
+                      <button class="Btour-btn btn-tour--js btn btn--size-l">
+                        Booking
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div class="col l-2-4 m-4">
+                  <div class="Btour-wrapper card-wrapper">
+                    <div class="card-wrapper__img">
+                      <img
+                        src="./assets/imgs/bHCM.jpg"
+                        alt=""
+                        class="Btour__img card__img"
+                      />
+                    </div>
+                    <div class="Btour-body card-body">
+                      <h4 class="Btour__heading card-title">
+                        Saigon Tour (Ho Chi Minh City)
+                      </h4>
+                      <p class="Btour-desc">
+                        Ho Chi Minh City Tour (formerly Saigon and still fondly
+                        called that by many) is a sometimes dizzying mix of old
+                        and new, with uniquely Asian and inter…
+                      </p>
+                      <button class="Btour-btn btn-tour--js btn btn--size-l">
+                        Booking
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div class="col l-2-4 m-4">
+                  <div class="Btour-wrapper card-wrapper">
+                    <div class="card-wrapper__img">
+                      <img
+                        src="./assets/imgs/bcondao.jpg"
+                        alt=""
+                        class="Btour__img card__img"
+                      />
+                    </div>
+                    <div class="Btour-body card-body">
+                      <h4 class="Btour__heading card-title">Con Dao</h4>
+                      <p class="Btour-desc">
+                        One of The World's Top 20 Mysterious Islands
+                      </p>
+                      <button class="Btour-btn btn-tour--js btn btn--size-l">
+                        Booking
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div class="col l-2-4 m-4">
+                  <div class="Btour-wrapper card-wrapper">
+                    <div class="card-wrapper__img">
+                      <img
+                        src="./assets/imgs/bvungtau.jpg"
+                        alt=""
+                        class="Btour__img card__img"
+                      />
+                    </div>
+                    <div class="Btour-body card-body">
+                      <h4 class="Btour__heading card-title">Vung Tau</h4>
+                      <p class="Btour-desc">
+                        Vung Tau, located about 120km to the southeast of Ho Chi
+                        Minh City, was known as Cap Saint-Jacques under French
+                        occupation. Among Vietnamese and…
+                      </p>
+                      <button class="Btour-btn btn-tour--js btn btn--size-l">
+                        Booking
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div class="col l-2-4 m-4">
+                  <div class="Btour-wrapper card-wrapper">
+                    <div class="card-wrapper__img">
+                      <img
+                        src="./assets/imgs/bphuyen.jpg"
+                        alt=""
+                        class="Btour__img card__img"
+                      />
+                    </div>
+                    <div class="Btour-body card-body">
+                      <h4 class="Btour__heading card-title">Phu Yen</h4>
+                      <p class="Btour-desc">
+                        Lying between Nha Trang and Quy Nhon, the province of
+                        Phu Yen is one that travelers generally pass through on
+                        their way up or down Vietnam’s l…
+                      </p>
+                      <button class="Btour-btn btn-tour--js btn btn--size-l">
+                        Booking
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div class="col l-2-4 m-4">
+                  <div class="Btour-wrapper card-wrapper">
+                    <div class="card-wrapper__img">
+                      <img
+                        src="./assets/imgs/bphanthiet.jpg"
+                        alt=""
+                        class="Btour__img card__img"
+                      />
+                    </div>
+                    <div class="Btour-body card-body">
+                      <h4 class="Btour__heading card-title">Phan Thiet</h4>
+                      <p class="Btour-desc">
+                        Just a three-hour drive from Ho Chi Minh City, the quiet
+                        beach resort of Phan Thiet is a perfect change of pace
+                        from modern city life.
+                      </p>
+                      <button class="Btour-btn btn-tour--js btn btn--size-l">
+                        Booking
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <footer class="footer footer-content">
+        <div class="grid wide">
+          <div class="row">
+            <div class="col l-3 m-4 c-6">
+              <h3 class="footer__heading">chăm sóc khách hàng</h3>
+              <ul class="footer-list">
+                <li class="footer-item">
+                  <a href="#" class="footer-items__link">Trung tâm trợ giúp</a>
+                </li>
+                <li class="footer-item">
+                  <a href="#" class="footer-items__link">VN-Booking Blog</a>
+                </li>
+                <li class="footer-item">
+                  <a href="#" class="footer-items__link">VN-Booking Mall</a>
+                </li>
+                <li class="footer-item">
+                  <a href="#" class="footer-items__link">Hướng Dẫn Mua Hàng</a>
+                </li>
+                <li class="footer-item">
+                  <a href="#" class="footer-items__link">Hướng Dẫn Bán Hàng</a>
+                </li>
+                <li class="footer-item">
+                  <a href="#" class="footer-items__link">Thanh Toán</a>
+                </li>
+              </ul>
+            </div>
+            <div class="col l-3 m-4 c-6">
+              <h3 class="footer__heading">về VN-Booking</h3>
+              <ul class="footer-list">
+                <li class="footer-item">
+                  <a href="#" class="footer-items__link"
+                    >Giới Thiệu Về VN-Booking Việt Nam</a
+                  >
+                </li>
+                <li class="footer-item">
+                  <a href="#" class="footer-items__link">Tuyển Dụng</a>
+                </li>
+                <li class="footer-item">
+                  <a href="#" class="footer-items__link"
+                    >Điều Khoàn VN-Booking</a
+                  >
+                </li>
+                <li class="footer-item">
+                  <a href="#" class="footer-items__link">Chính Sách Bảo mật</a>
+                </li>
+                <li class="footer-item">
+                  <a href="#" class="footer-items__link">Chính Hãng</a>
+                </li>
+              </ul>
+            </div>
+            <div class="col l-3 m-4 c-6">
+              <h3 class="footer__heading">thanh toán</h3>
+              <ul class="footer-list-payment">
+                <li class="footer-item-payment">
+                  <img
+                    src="./assets/imgs/f1.png"
+                    alt=""
+                    class="footer-item-payment__img"
+                  />
+                </li>
+                <li class="footer-item-payment">
+                  <img
+                    src="./assets/imgs/f2.png"
+                    alt=""
+                    class="footer-item-payment__img"
+                  />
+                </li>
+                <li class="footer-item-payment">
+                  <img
+                    src="./assets/imgs/f3.png"
+                    alt=""
+                    class="footer-item-payment__img"
+                  />
+                </li>
+                <li class="footer-item-payment">
+                  <img
+                    src="./assets/imgs/f4.png"
+                    alt=""
+                    class="footer-item-payment__img"
+                  />
+                </li>
+                <li class="footer-item-payment">
+                  <img
+                    src="./assets/imgs/f5.png"
+                    alt=""
+                    class="footer-item-payment__img"
+                  />
+                </li>
+                <li class="footer-item-payment">
+                  <img
+                    src="./assets/imgs/f6.png"
+                    alt=""
+                    class="footer-item-payment__img"
+                  />
+                </li>
+                <li class="footer-item-payment">
+                  <img
+                    src="./assets/imgs/f7.png"
+                    alt=""
+                    class="footer-item-payment__img"
+                  />
+                </li>
+              </ul>
+            </div>
+            <div class="col l-3 m-4 c-6">
+              <h3 class="footer__heading">theo dõi chúng tôi trên</h3>
+              <ul class="footer-list">
+                <li class="footer-item">
+                  <a href="#" class="footer-items__link">
+                    <i class="footer-item__icon fa-brands fa-facebook"></i>
+                    Facebook</a
+                  >
+                </li>
+                <li class="footer-item">
+                  <a href="#" class="footer-items__link">
+                    <i class="footer-item__icon fa-brands fa-instagram"></i>
+                    Instagram</a
+                  >
+                </li>
+                <li class="footer-item">
+                  <a href="#" class="footer-items__link">
+                    <i class="footer-item__icon fa-brands fa-linkedin"></i>
+                    Linkedln</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <div class="grid wide">
+            <p class="footer-text">
+              © 2023 Haui. Tất cả các quyền được bảo lưu.
+            </p>
+          </div>
+        </div>
+      </footer>
+      <div class="modal">
+        <div class="modal__lay"></div>
+        <div class="modal__body">
+          <!-- register-form -->
+          <div class="auth-form auth-form--register">
+            <div class="modal__container">
+              <div class="auth-form__header">
+                <h3 class="auth-form__heading">Đăng ký</h3>
+                <span class="auth-form__switch-btn switch-btnLogin--js"
+                  >Đăng nhập</span
+                >
+              </div>
+              <div class="auth-form__form">
+                <div class="auth-form__group">
+                  <input
+                    type="email"
+                    placeholder="Nhập Email"
+                    class="auth-form__input"
+                  />
+                </div>
+                <div class="auth-form__group">
+                  <input
+                    type="password"
+                    placeholder="Nhập mật khẩu"
+                    class="auth-form__input"
+                  />
+                </div>
+                <div class="auth-form__group">
+                  <input
+                    type="password"
+                    placeholder="Nhập lại mật khẩu"
+                    class="auth-form__input"
+                  />
+                </div>
+              </div>
+              <div class="auth-form__aside">
+                <p class="auth-form__policy-text">
+                  Bằng việc đăng kí, bạn đã đồng ý với VN-Booking về
+                  <a href="#" class="auth-form__text-link"
+                    >Điều khoản dịch vụ</a
+                  >
+                  &
+                  <a href="#" class="auth-form__text-link"
+                    >Chính sách bảo mật</a
+                  >
+                </p>
+              </div>
+              <div class="auth-form__controls">
+                <button
+                  class="btn btn--size-l btn--normal auth-form__controls--back btn-back--js"
+                >
+                  <p>TRỞ LẠI</p>
+                </button>
+                <button class="btn btn--size-l btn--primary">
+                  <p>ĐĂNG KÝ</p>
+                </button>
+              </div>
+            </div>
+
+            <div class="auth-form__socials">
+              <a
+                href="#"
+                class="auth-form__socials-facebook btn btn--size-s btn--icon"
+              >
+                <i
+                  class="auth-form__socials-icon fa-brands fa-square-facebook"
+                ></i>
+                <spam class="auth-form__socials-title"
+                  >Kết nối với Facebook</spam
+                ></a
+              >
+              <a
+                href="#"
+                class="auth-form__socials-google btn btn--size-s btn--icon"
+              >
+                <i class="auth-form__socials-icon">
+                  <img
+                    class="auth-form__socials-img"
+                    src="./assets/imgs/google.png"
+                    alt=""
+                  />
+                </i>
+                <spam class="auth-form__socials-title"
+                  >Kết nối với Google</spam
+                ></a
+              >
+            </div>
+          </div>
+          <!-- login-form -->
+          <div class="auth-form auth-form--login">
+            <div class="modal__container">
+              <div class="auth-form__header">
+                <h3 class="auth-form__heading">Đăng nhập</h3>
+                <span class="auth-form__switch-btn switch-btnRegister--js"
+                  >Đăng ký</span
+                >
+              </div>
+              <div class="auth-form__form">
+                <div class="auth-form__group">
+                  <input
+                    type="email"
+                    placeholder="Nhập Email"
+                    class="auth-form__input email--js"
+                  />
+                </div>
+                <div class="auth-form__group">
+                  <input
+                    type="password"
+                    placeholder="Nhập mật khẩu "
+                    class="auth-form__input pass--js"
+                  />
+                </div>
+              </div>
+              <div class="auth-form__aside-login">
+                <a href="#" class="auth-form__aside--link"> Quên mật khẩu </a>
+                <span class="auth-form__aside--separate"></span>
+                <a
+                  href="#"
+                  class="auth-form__aside--link auth-form__aside--link-forgot"
+                >
+                  Cẩn trợ giúp?
+                </a>
+              </div>
+              <div class="auth-form__controls">
+                <button
+                  class="btn btn--size-l btn--normal auth-form__controls--back btn-back--js"
+                >
+                  <p>TRỞ LẠI</p>
+                </button>
+                <a
+                  href="./manage.html"
+                  class="btn btn--size-l btn--primary btnDN--js"
+                >
+                  <p>ĐĂNG NHẬP</p>
+                </a>
+              </div>
+            </div>
+
+            <div class="auth-form__socials">
+              <a
+                href="#"
+                class="auth-form__socials-facebook btn btn--size-s btn--icon"
+              >
+                <i
+                  class="auth-form__socials-icon fa-brands fa-square-facebook"
+                ></i>
+                <spam class="auth-form__socials-title"
+                  >Kết nối với Facebook</spam
+                ></a
+              >
+              <a
+                href="#"
+                class="auth-form__socials-google btn btn--size-s btn--icon"
+              >
+                <i class="auth-form__socials-icon">
+                  <img
+                    class="auth-form__socials-img"
+                    src="./assets/imgs/google.png"
+                    alt=""
+                  />
+                </i>
+                <spam class="auth-form__socials-title"
+                  >Kết nối với Google</spam
+                ></a
+              >
+            </div>
+          </div>
+          <!-- end -->
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="./main.js"></script>
+</html>

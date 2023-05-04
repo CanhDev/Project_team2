@@ -1,0 +1,141 @@
+#header {
+  background-color: black;
+  color: var(--primary-color);
+  padding-top: 8px;
+}
+.headerT {
+  padding: 0px 40px;
+  border-bottom: 1px solid var(--border-color);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.headerT__contact {
+  display: flex;
+  font-size: 1.4rem;
+  align-items: center;
+  letter-spacing: 1px;
+  width: 40%;
+}
+.headerT__contact-email,
+.headerT__contact-phone {
+  display: flex;
+  align-items: center;
+  padding: 0 12px;
+  cursor: pointer;
+}
+.headerT__contact-email i,
+.headerT__contact-phone i {
+  margin-right: 8px;
+}
+.headerT__logo {
+  width: 100px;
+  display: block;
+  text-decoration: none;
+  margin-bottom: 4px;
+}
+.headerT__logo img {
+  width: 100%;
+  object-fit: contain;
+}
+.headerT__option {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  width: 40%;
+}
+.headerT__option-languages {
+  font-size: 1.6rem;
+  margin-right: 28px;
+  position: relative;
+}
+.headerT__option-languages span {
+  cursor: pointer;
+  padding: 12px;
+  display: block;
+  position: relative;
+}
+.headerT__option-languages span:hover .language-list {
+  display: block;
+}
+.headerT__option-languages i {
+  font-size: 1rem;
+}
+/* languges-lists */
+
+/* end-lists */
+.headerT__option-login {
+  color: var(--black-color);
+  background-color: var(--primary-color);
+  font-size: 1.8rem;
+  border: none;
+  outline: none;
+  padding: 12px 70px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all linear 0.1s;
+}
+.headerT__option-login:hover {
+  opacity: 0.8;
+}
+/* menu */
+.headerB {
+}
+.menu {
+  width: 100%;
+  position: relative;
+}
+.menu__list {
+  width: inherit;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+}
+.menu__list-items {
+}
+.menu__list-items-link {
+  font-size: 1.4rem;
+  color: #b8b2a9;
+  text-decoration: none;
+  padding: 6px 24px;
+  transition: all ease-in-out 0.2s;
+  display: block;
+}
+.menu__list-items-link:hover,
+.menu__list-items i:hover {
+  color: var(--primary-color);
+}
+.search-header-icon {
+  font-size: 1.4rem;
+  font-weight: 800;
+  color: #b8b2a9;
+  cursor: pointer;
+  padding: 8px;
+  transition: all linear 0.2s;
+}
+/* search */
+.open-header-search {
+  background-color: black;
+  height: var(--header-search-height) !important;
+  transition: all linear 0.2s;
+}
+.header-search {
+  border-top: 1px solid var(--border-color);
+  height: 0vh;
+  overflow: hidden;
+  transition: all linear 0.2s;
+  background-color: black;
+}
+.header-search__input {
+  height: 0vh;
+  width: 100%;
+  background-color: black;
+  outline: none;
+  border: none;
+  font-size: 2.8rem;
+  text-align: justify;
+  color: var(--primary-color);
+  transition: all linear 0.2s;
+}

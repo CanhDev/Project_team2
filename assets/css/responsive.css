@@ -1,0 +1,141 @@
+.hideonpc {
+  display: none;
+}
+.hide {
+  display: none !important;
+}
+/* mobile and tablet */
+
+@media (max-width: 1023px) {
+  .headerT__option-login {
+    padding: 16px 28px;
+  }
+  .headerT__option-languages span {
+    font-size: 1.8rem;
+  }
+  .language-list {
+    right: 0;
+    left: 0;
+  }
+  .tab-item {
+    font-size: 1.6rem;
+  }
+  .headerT__contact {
+    display: block;
+    font-size: 1.6rem;
+  }
+  .explore-right {
+    height: 40vh;
+    margin: 40px 10px;
+  }
+  .tour-options {
+    flex-wrap: wrap;
+  }
+  .pre-btn,
+  .nxt-btn {
+    width: 5vw;
+  }
+  .pre-btn img,
+  .nxt-btn img {
+    width: 2.5vw;
+  }
+  .Btour-desc {
+    text-align: unset;
+  }
+}
+/* tablet */
+@media (min-width: 740px) and (max-width: 1023px) {
+  .menu__list-items-link {
+    font-size: 1.6rem;
+    padding: 6px 12px;
+  }
+}
+/* mobile */
+@media (max-width: 739px) {
+  .open-flex {
+    display: flex !important;
+  }
+  .open-block {
+    display: block !important;
+  }
+  .headerT__contact {
+    display: none;
+  }
+  .hideonmobile {
+    display: none;
+  }
+  .hideonpc {
+    display: block;
+  }
+  .menuMB {
+  }
+  .menuMB__icon {
+    font-size: 3.8rem;
+  }
+  .overlayMB {
+    position: absolute;
+    z-index: 3;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+    display: none;
+  }
+  .menu-listMB {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    width: 60vw;
+    z-index: 4;
+    background-color: var(--white-color);
+    padding: 24px;
+    margin: 0;
+    list-style: none;
+    display: none;
+  }
+  .menu-listMB-items {
+  }
+  .menu-listMB-items-link {
+    display: block;
+    font-size: 1.6rem;
+    color: var(--text-color);
+    text-decoration: none;
+    padding: 12px 0;
+    border-bottom: 1px solid var(--border2-color);
+    background-color: transparent;
+  }
+  .slider {
+    padding-top: 50%;
+  }
+  .slider__heading {
+    font-size: 4rem;
+    line-height: 4rem;
+    margin-bottom: 12px;
+  }
+  .slider__title {
+    margin: 0;
+    line-height: 1.4;
+  }
+  .app-heading {
+    font-size: 3rem;
+  }
+  .tour-bar {
+    flex-direction: column;
+    gap: 12px;
+    align-items: stretch;
+  }
+  .travel__guide {
+    padding: 36px 12px;
+  }
+  .guide-right {
+    padding: 12px 0;
+  }
+  .Btour-desc {
+    text-align: center;
+  }
+  .footer {
+    padding: 80px 30px;
+  }
+}
