@@ -7,7 +7,7 @@
   /* display: flex; */
   display: none;
   animation: fadeIN2 linear 0.1s;
-  z-index: 2;
+  z-index: 3;
 }
 .modal__lay {
   position: absolute;
