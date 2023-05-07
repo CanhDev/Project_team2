@@ -1,0 +1,1299 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>VN-Booking</title>
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="./assets/imgs/logo-haui-size.png"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="./assets/fonts/themify-icons/themify-icons.css"
+    />
+    <link rel="stylesheet" href="./assets/css/base.css" />
+    <link rel="stylesheet" href="./assets/css/grid.css" />
+    <link rel="stylesheet" href="./assets/css/header.css" />
+    <link rel="stylesheet" href="./assets/css/modal.css" />
+    <link rel="stylesheet" href="./assets/css/container.css" />
+    <link rel="stylesheet" href="./assets/css/footer.css" />
+    <link rel="stylesheet" href="./assets/css/responsive.css" />
+  </head>
+  <body>
+    <div class="app">
+      <header id="header">
+        <div class="headerT">
+          <div class="headerT__contact">
+            <div class="headerT__contact-email">
+              <i class="fa-regular fa-envelope"></i>
+              <p>cbnn2002@gmail.com</p>
+            </div>
+            <div class="headerT__contact-phone">
+              <i class="fa-solid fa-phone"></i>
+              <p>Call Us : +84-342-875-989</p>
+            </div>
+          </div>
+          <a href="./index.html" class="headerT__logo">
+            <img src="./assets/imgs/headerlogo.png" alt="" />
+          </a>
+          <div class="headerT__option">
+            <div class="headerT__option-languages hideonmobile">
+              <span
+                >Languages
+                <i class="fa-solid fa-chevron-down"></i>
+                <ul class="language-list tab-list">
+                  <li class="tab-item tab-item--avtive">English</li>
+                  <li class="tab-item">Tiếng Việt</li>
+                  <li class="tab-item">French</li>
+                  <li class="tab-item">German</li>
+                  <li class="tab-item">Italian</li>
+                  <li class="tab-item">Spanlish</li>
+                </ul>
+              </span>
+            </div>
+            <button class="hideonmobile headerT__option-login btn-register--js">
+              Sign up
+            </button>
+          </div>
+          <!-- mobile-menu -->
+          <div class="menuMB hideonpc">
+            <i class="ti-menu menuMB__icon"></i>
+          </div>
+          <div class="overlayMB hideonpc"></div>
+          <ul class="menu-listMB hideonpc">
+            <li class="menu-listMB-items">
+              <a href="#" class="menu-listMB-items-link">HOME</a>
+            </li>
+            <li class="menu-listMB-items">
+              <a href="#explore" class="menu-listMB-items-link">EXPLORE</a>
+            </li>
+            <li class="menu-listMB-items">
+              <a href="#tours" class="menu-listMB-items-link">TOURS</a>
+            </li>
+            <li class="menu-listMB-items">
+              <a href="#travel__guide" class="menu-listMB-items-link">GUIDE</a>
+            </li>
+            <li class="menu-listMB-items">
+              <a href="#best-tours" class="menu-listMB-items-link"
+                >BEST-TOURS</a
+              >
+            </li>
+            <li class="menu-listMB-items">
+              <a href="./contact.html" class="menu-listMB-items-link"
+                >CONTACT-US</a
+              >
+            </li>
+            <li class="menu-listMB-items menu-listMB-items-link">
+              <button class="headerT__option-login btn-register--js">
+                Sign up
+              </button>
+            </li>
+          </ul>
+        </div>
+        <div class="headerB hideonmobile">
+          <div class="grid wide">
+            <div class="row">
+              <div class="menu">
+                <ul class="menu__list">
+                  <li class="menu__list-items">
+                    <a href="./index.html" class="menu__list-items-link"
+                      >HOME</a
+                    >
+                  </li>
+                  <li class="menu__list-items">
+                    <a href="./index.html#explore" class="menu__list-items-link"
+                      >EXPLORE</a
+                    >
+                  </li>
+                  <li class="menu__list-items">
+                    <a href="./tours.html" class="menu__list-items-link"
+                      >TOURS</a
+                    >
+                  </li>
+                  <li class="menu__list-items">
+                    <a
+                      href="./index.html#travel__guide"
+                      class="menu__list-items-link"
+                      >GUIDE</a
+                    >
+                  </li>
+                  <li class="menu__list-items">
+                    <a
+                      href="./index.html#best-tours"
+                      class="menu__list-items-link"
+                      >BEST-TOURS</a
+                    >
+                  </li>
+                  <li class="menu__list-items">
+                    <a href="./contact.html" class="menu__list-items-link"
+                      >CONTACT-US</a
+                    >
+                  </li>
+                  <li class="menu__list-items">
+                    <i class="ti-search search-header-icon"></i>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="header-search">
+            <div class="grid wide">
+              <div class="row">
+                <div class="col l-12 c-12">
+                  <input
+                    class="header-search__input"
+                    placeholder="|Search on site..."
+                    type="text"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <div id="app__container">
+        <div id="tours" class="tours">
+          <div class="grid wide">
+            <div class="row">
+              <div class="col l-12 c-12 m-12">
+                <div class="tour-container">
+                  <h4 class="app-heading">Our VN-Booking Tours</h4>
+                  <div class="tour-bar">
+                    <div class="tour-options">
+                      <h2 class="tour-options__title">Travel Style</h2>
+                      <div class="tour-options-current">
+                        <h2 class="tour-title">All Travel Styles</h2>
+                        <i class="ti-arrow-down"></i>
+                        <ul class="tour-options-lists tab-list">
+                          <li class="tab-item tab-item--avtive">
+                            All Travel Styles
+                          </li>
+                          <li class="tab-item">Adventure Tours</li>
+                          <li class="tab-item">Biking & Trekking</li>
+                          <li class="tab-item">Classic Tours</li>
+                          <li class="tab-item">Culinary Tours</li>
+                          <li class="tab-item">Day Trips</li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="tour-options">
+                      <h2 class="tour-options__title">Duration of the trip</h2>
+                      <div class="tour-options-current">
+                        <h2 class="tour-title">All Durations</h2>
+                        <i class="ti-arrow-down"></i>
+                        <ul class="tour-options-lists tab-list">
+                          <li class="tab-item tab-item--avtive">
+                            All Durations
+                          </li>
+                          <li class="tab-item">< 5 days</li>
+                          <li class="tab-item">5 - 7 days</li>
+                          <li class="tab-item">7 - 10 days</li>
+                          <li class="tab-item">10 - 15 days</li>
+                          <li class="tab-item">> 15 days</li>
+                        </ul>
+                      </div>
+                    </div>
+                    <button class="btn2 btn2--size-l btn2--primary">
+                      FIND TOUR
+                    </button>
+                  </div>
+                  <div class="card-tour">
+                    <div class="row">
+                      <div class="col l-4 c-12 m-6">
+                        <div class="card-wrapper">
+                          <div class="card-wrapper__img">
+                            <img
+                              src="./assets/imgs/a1.jpg"
+                              alt=""
+                              class="card__img"
+                            />
+                          </div>
+                          <div class="card-body">
+                            <p class="card-days">2 DAYS</p>
+                            <h4 class="card-title">
+                              The Best of The Best Vietnam for Post Pandemic
+                              Travelers. Discover, Explore, Indulge, Relax and
+                              Immerse in Natural and Cultural Heritage. Enjoy
+                              Nature and Culture and Stay in Our Hand-Picked
+                            </h4>
+                            <div class="card-desc">
+                              <p class="card-price">$999</p>
+                              <button
+                                class="btn-tour--js btn-tour btn2 btn--size-s btn2--primary"
+                              >
+                                Booking
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col l-4 c-12 m-6">
+                        <div class="card-wrapper">
+                          <div class="card-wrapper__img">
+                            <img
+                              src="./assets/imgs/a2.jpg"
+                              alt=""
+                              class="card__img"
+                            />
+                          </div>
+                          <div class="card-body">
+                            <p class="card-days">7 DAYS</p>
+                            <h4 class="card-title">
+                              Saigon’s Based Travelers Explore Intriguing Cu Chi
+                              Tunnels, Amazing Mekong Delta and Back to Hotel
+                              Comfort for Lifestyle Experiences in the
+                              Metropolitan City of Vietnam
+                            </h4>
+                            <div class="card-desc">
+                              <p class="card-price">$1000</p>
+                              <button
+                                class="btn-tour--js btn-tour btn2 btn--size-s btn2--primary"
+                              >
+                                Booking
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col l-4 c-12 m-6">
+                        <div class="card-wrapper">
+                          <div class="card-wrapper__img">
+                            <img
+                              src="./assets/imgs/a3.jpg"
+                              alt=""
+                              class="card__img"
+                            />
+                          </div>
+                          <div class="card-body">
+                            <p class="card-days">7 DAYS</p>
+                            <h4 class="card-title">
+                              Unlock the treasures of Hanoi Capital, Enjoy
+                              Natural Walks, Encounter Locals and Immerse
+                              yourselves in the Natural and Cultural Heritage in
+                              Halong and Lan Ha Bays
+                            </h4>
+                            <div class="card-desc">
+                              <p class="card-price">$899</p>
+                              <button
+                                class="btn-tour--js btn-tour btn2 btn--size-s btn2--primary"
+                              >
+                                Booking
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col l-4 c-12 m-6">
+                        <div class="card-wrapper">
+                          <div class="card-wrapper__img">
+                            <img
+                              src="./assets/imgs/a4.jpg"
+                              alt=""
+                              class="card__img"
+                            />
+                          </div>
+                          <div class="card-body">
+                            <p class="card-days">3 DAYS</p>
+                            <h4 class="card-title">
+                              A Journey of Discovery in 5 Days in the Centre of
+                              Vietnam, Taste Local Spicy Food, Relax in Danang
+                              Beach and Visit its Highlights, Discover Two
+                              World’s Heritage Listed Sites Hue and Hoi An.
+                            </h4>
+                            <div class="card-desc">
+                              <p class="card-price">$500</p>
+                              <button
+                                class="btn-tour--js btn-tour btn2 btn--size-s btn2--primary"
+                              >
+                                Booking
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col l-4 c-12 m-6">
+                        <div class="card-wrapper">
+                          <div class="card-wrapper__img">
+                            <img
+                              src="./assets/imgs/a5.jpg"
+                              alt=""
+                              class="card__img"
+                            />
+                          </div>
+                          <div class="card-body">
+                            <p class="card-days">7 DAYS</p>
+                            <h4 class="card-title">
+                              Discover old and new capitals Hoa Lu and Hanoi,
+                              Stay, Dine, Cruise, Explore A Masterpiece in The
+                              Natural Wonder Lan Ha Bay with Heritage Binh Chuan
+                              Cat Ba Archipelago 5 days
+                            </h4>
+                            <div class="card-desc">
+                              <p class="card-price">$999</p>
+                              <button
+                                class="btn-tour--js btn-tour btn2 btn--size-s btn2--primary"
+                              >
+                                Booking
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col l-4 c-12 m-6">
+                        <div class="card-wrapper">
+                          <div class="card-wrapper__img">
+                            <img
+                              src="./assets/imgs/a6.jpg"
+                              alt=""
+                              class="card__img"
+                            />
+                          </div>
+                          <div class="card-body">
+                            <p class="card-days">2 DAYS</p>
+                            <h4 class="card-title">
+                              Encounter Vietnam Culture, Nature, Food and Local
+                              Lifestyle in 13 Days
+                            </h4>
+                            <div class="card-desc">
+                              <p class="card-price">$799</p>
+                              <button
+                                class="btn-tour--js btn-tour btn2 btn--size-s btn2--primary"
+                              >
+                                Booking
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col l-4 c-12 m-6">
+                        <div class="card-wrapper">
+                          <div class="card-wrapper__img">
+                            <img
+                              src="./assets/imgs/a7.jpg"
+                              alt=""
+                              class="card__img"
+                            />
+                          </div>
+                          <div class="card-body">
+                            <p class="card-days">7 DAYS</p>
+                            <h4 class="card-title">
+                              Discover, Explore, Indulge, Relax and Immerse in
+                              Natural and Cultural Vietnam Heritage in 10 Days
+                            </h4>
+                            <div class="card-desc">
+                              <p class="card-price">$699</p>
+                              <button
+                                class="btn-tour--js btn-tour btn2 btn--size-s btn2--primary"
+                              >
+                                Booking
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col l-4 c-12 m-6">
+                        <div class="card-wrapper">
+                          <div class="card-wrapper__img">
+                            <img
+                              src="./assets/imgs/a8.jpg"
+                              alt=""
+                              class="card__img"
+                            />
+                          </div>
+                          <div class="card-body">
+                            <p class="card-days">2 DAYS</p>
+                            <h4 class="card-title">
+                              Premium Vietnam Unique Cruise, Heritage Tour and
+                              Handpicked Hotels 11 days
+                            </h4>
+                            <div class="card-desc">
+                              <p class="card-price">$999</p>
+                              <button
+                                class="btn-tour--js btn-tour btn2 btn--size-s btn2--primary"
+                              >
+                                Booking
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col l-4 c-12 m-6">
+                        <div class="card-wrapper">
+                          <div class="card-wrapper__img">
+                            <img
+                              src="./assets/imgs/a9.jpg"
+                              alt=""
+                              class="card__img"
+                            />
+                          </div>
+                          <div class="card-body">
+                            <p class="card-days">5 DAYS</p>
+                            <h4 class="card-title">
+                              Hoi An, the little town by the Central coastline,
+                              has long been among the top destinations for
+                              Vietnam tours. This land not only possesses
+                              tranquil landsc…
+                            </h4>
+                            <div class="card-desc">
+                              <p class="card-price">$989</p>
+                              <button
+                                class="btn-tour--js btn-tour btn2 btn--size-s btn2--primary"
+                              >
+                                Booking
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col l-4 c-12 m-6">
+                        <div class="card-wrapper">
+                          <div class="card-wrapper__img">
+                            <img
+                              src="./assets/imgs/a10.jpg"
+                              alt=""
+                              class="card__img"
+                            />
+                          </div>
+                          <div class="card-body">
+                            <p class="card-days">4 DAYS</p>
+                            <h4 class="card-title">
+                              Con Dao Island Vacation 4 days
+                            </h4>
+                            <div class="card-desc">
+                              <p class="card-price">$1294</p>
+                              <button
+                                class="btn-tour--js btn-tour btn2 btn--size-s btn2--primary"
+                              >
+                                Booking
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col l-4 c-12 m-6">
+                        <div class="card-wrapper">
+                          <div class="card-wrapper__img">
+                            <img
+                              src="./assets/imgs/a11.jpg"
+                              alt=""
+                              class="card__img"
+                            />
+                          </div>
+                          <div class="card-body">
+                            <p class="card-days">4 DAYS</p>
+                            <h4 class="card-title">
+                              Amazing Voyages to Cat Ba & Halong Bay 4 Days
+                            </h4>
+                            <div class="card-desc">
+                              <p class="card-price">$367</p>
+                              <button
+                                class="btn-tour--js btn-tour btn2 btn--size-s btn2--primary"
+                              >
+                                Booking
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col l-4 c-12 m-6">
+                        <div class="card-wrapper">
+                          <div class="card-wrapper__img">
+                            <img
+                              src="./assets/imgs/a12.jpg"
+                              alt=""
+                              class="card__img"
+                            />
+                          </div>
+                          <div class="card-body">
+                            <p class="card-days">5 DAYS</p>
+                            <h4 class="card-title">
+                              Fascinating Escape to Halong Bay & Ninh Binh 5
+                              Days
+                            </h4>
+                            <div class="card-desc">
+                              <p class="card-price">$989</p>
+                              <button
+                                class="btn-tour--js btn-tour btn2 btn--size-s btn2--primary"
+                              >
+                                Booking
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col l-4 c-12 m-6">
+                        <div class="card-wrapper">
+                          <div class="card-wrapper__img">
+                            <img
+                              src="./assets/imgs/a13.jpg"
+                              alt=""
+                              class="card__img"
+                            />
+                          </div>
+                          <div class="card-body">
+                            <p class="card-days">5 DAYS</p>
+                            <h4 class="card-title">
+                              Explore Hanoi & Mai Chau Like Locals 4 Days
+                            </h4>
+                            <div class="card-desc">
+                              <p class="card-price">$777</p>
+                              <button
+                                class="btn-tour--js btn-tour btn2 btn--size-s btn2--primary"
+                              >
+                                Booking
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col l-4 c-12 m-6">
+                        <div class="card-wrapper">
+                          <div class="card-wrapper__img">
+                            <img
+                              src="./assets/imgs/a14.jpg"
+                              alt=""
+                              class="card__img"
+                            />
+                          </div>
+                          <div class="card-body">
+                            <p class="card-days">5 DAYS</p>
+                            <h4 class="card-title">
+                              Hanoi - Ninh Binh - Galaxy Cave 3 Days
+                            </h4>
+                            <div class="card-desc">
+                              <p class="card-price">$189</p>
+                              <button
+                                class="btn-tour--js btn-tour btn2 btn--size-s btn2--primary"
+                              >
+                                Booking
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col l-4 c-12 m-6">
+                        <div class="card-wrapper">
+                          <div class="card-wrapper__img">
+                            <img
+                              src="./assets/imgs/a15.jpg"
+                              alt=""
+                              class="card__img"
+                            />
+                          </div>
+                          <div class="card-body">
+                            <p class="card-days">5 DAYS</p>
+                            <h4 class="card-title">
+                              Vibrant Culture Immersion in Mai Chau 4 Days
+                            </h4>
+                            <div class="card-desc">
+                              <p class="card-price">$289</p>
+                              <button
+                                class="btn-tour--js btn-tour btn2 btn--size-s btn2--primary"
+                              >
+                                Booking
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col l-4 c-12 m-6">
+                        <div class="card-wrapper">
+                          <div class="card-wrapper__img">
+                            <img
+                              src="./assets/imgs/a16.jpg"
+                              alt=""
+                              class="card__img"
+                            />
+                          </div>
+                          <div class="card-body">
+                            <p class="card-days">5 DAYS</p>
+                            <h4 class="card-title">
+                              Stunning Landscape in Ninh Binh, Van Long & Mai
+                              Chau 4 days
+                            </h4>
+                            <div class="card-desc">
+                              <p class="card-price">$89</p>
+                              <button
+                                class="btn-tour--js btn-tour btn2 btn--size-s btn2--primary"
+                              >
+                                Booking
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col l-4 c-12 m-6">
+                        <div class="card-wrapper">
+                          <div class="card-wrapper__img">
+                            <img
+                              src="./assets/imgs/a17.jpg"
+                              alt=""
+                              class="card__img"
+                            />
+                          </div>
+                          <div class="card-body">
+                            <p class="card-days">5 DAYS</p>
+                            <h4 class="card-title">
+                              Discover the Charms of the South Vietnam in Style
+                              5 days
+                            </h4>
+                            <div class="card-desc">
+                              <p class="card-price">$289</p>
+                              <button
+                                class="btn-tour--js btn-tour btn2 btn--size-s btn2--primary"
+                              >
+                                Booking
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col l-4 c-12 m-6">
+                        <div class="card-wrapper">
+                          <div class="card-wrapper__img">
+                            <img
+                              src="./assets/imgs/a18.jpg"
+                              alt=""
+                              class="card__img"
+                            />
+                          </div>
+                          <div class="card-body">
+                            <p class="card-days">5 DAYS</p>
+                            <h4 class="card-title">
+                              Unique Flavors of South Vietnam 6 days
+                            </h4>
+                            <div class="card-desc">
+                              <p class="card-price">$189</p>
+                              <button
+                                class="btn-tour--js btn-tour btn2 btn--size-s btn2--primary"
+                              >
+                                Booking
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col l-4 c-12 m-6">
+                        <div class="card-wrapper">
+                          <div class="card-wrapper__img">
+                            <img
+                              src="./assets/imgs/a19.jpg"
+                              alt=""
+                              class="card__img"
+                            />
+                          </div>
+                          <div class="card-body">
+                            <p class="card-days">10 DAYS</p>
+                            <h4 class="card-title">
+                              Vietnam Cooking Tour 10 days
+                            </h4>
+                            <div class="card-desc">
+                              <p class="card-price">$189</p>
+                              <button
+                                class="btn-tour--js btn-tour btn2 btn--size-s btn2--primary"
+                              >
+                                Booking
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col l-4 c-12 m-6">
+                        <div class="card-wrapper">
+                          <div class="card-wrapper__img">
+                            <img
+                              src="./assets/imgs/a20.jpg"
+                              alt=""
+                              class="card__img"
+                            />
+                          </div>
+                          <div class="card-body">
+                            <p class="card-days">3 DAYS</p>
+                            <h4 class="card-title">
+                              Saigon Spa Package 4 days-3 nights
+                            </h4>
+                            <div class="card-desc">
+                              <p class="card-price">$389</p>
+                              <button
+                                class="btn-tour--js btn-tour btn2 btn--size-s btn2--primary"
+                              >
+                                Booking
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col l-4 c-12 m-6">
+                        <div class="card-wrapper">
+                          <div class="card-wrapper__img">
+                            <img
+                              src="./assets/imgs/a21.jpg"
+                              alt=""
+                              class="card__img"
+                            />
+                          </div>
+                          <div class="card-body">
+                            <p class="card-days">3 DAYS</p>
+                            <h4 class="card-title">Vietnam in Depth 19 days</h4>
+                            <div class="card-desc">
+                              <p class="card-price">$389</p>
+                              <button
+                                class="btn-tour--js btn-tour btn2 btn--size-s btn2--primary"
+                              >
+                                Booking
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col l-4 c-12 m-6">
+                        <div class="card-wrapper">
+                          <div class="card-wrapper__img">
+                            <img
+                              src="./assets/imgs/a22.jpg"
+                              alt=""
+                              class="card__img"
+                            />
+                          </div>
+                          <div class="card-body">
+                            <p class="card-days">5 DAYS</p>
+                            <h4 class="card-title">Vietnam in Depth 19 days</h4>
+                            <div class="card-desc">
+                              <p class="card-price">$689</p>
+                              <button
+                                class="btn-tour--js btn-tour btn2 btn--size-s btn2--primary"
+                              >
+                                Booking
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col l-4 c-12 m-6">
+                        <div class="card-wrapper">
+                          <div class="card-wrapper__img">
+                            <img
+                              src="./assets/imgs/a23.jpg"
+                              alt=""
+                              class="card__img"
+                            />
+                          </div>
+                          <div class="card-body">
+                            <p class="card-days">6 DAYS</p>
+                            <h4 class="card-title">
+                              Best of the Best Vietnam Holiday 18 days
+                            </h4>
+                            <div class="card-desc">
+                              <p class="card-price">$189</p>
+                              <button
+                                class="btn-tour--js btn-tour btn2 btn--size-s btn2--primary"
+                              >
+                                Booking
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col l-4 c-12 m-6">
+                        <div class="card-wrapper">
+                          <div class="card-wrapper__img">
+                            <img
+                              src="./assets/imgs/a24.jpg"
+                              alt=""
+                              class="card__img"
+                            />
+                          </div>
+                          <div class="card-body">
+                            <p class="card-days">12 DAYS</p>
+                            <h4 class="card-title">
+                              Fascinating Vietnam Tour 12 days
+                            </h4>
+                            <div class="card-desc">
+                              <p class="card-price">$89</p>
+                              <button
+                                class="btn-tour--js btn-tour btn2 btn--size-s btn2--primary"
+                              >
+                                Booking
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col l-4 c-12 m-6">
+                        <div class="card-wrapper">
+                          <div class="card-wrapper__img">
+                            <img
+                              src="./assets/imgs/a25.jpg"
+                              alt=""
+                              class="card__img"
+                            />
+                          </div>
+                          <div class="card-body">
+                            <p class="card-days">16 DAYS</p>
+                            <h4 class="card-title">
+                              Essence of Vietnam 16 days
+                            </h4>
+                            <div class="card-desc">
+                              <p class="card-price">$1189</p>
+                              <button
+                                class="btn-tour--js btn-tour btn2 btn--size-s btn2--primary"
+                              >
+                                Booking
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col l-4 c-12 m-6">
+                        <div class="card-wrapper">
+                          <div class="card-wrapper__img">
+                            <img
+                              src="./assets/imgs/a26.jpg"
+                              alt=""
+                              class="card__img"
+                            />
+                          </div>
+                          <div class="card-body">
+                            <p class="card-days">7 DAYS</p>
+                            <h4 class="card-title">
+                              Amazing Vietnam 7 Days Tour from Hanoi to Ho Chi
+                              Minh City
+                            </h4>
+                            <div class="card-desc">
+                              <p class="card-price">$1189</p>
+                              <button
+                                class="btn-tour--js btn-tour btn2 btn--size-s btn2--primary"
+                              >
+                                Booking
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col l-4 c-12 m-6">
+                        <div class="card-wrapper">
+                          <div class="card-wrapper__img">
+                            <img
+                              src="./assets/imgs/a27.jpg"
+                              alt=""
+                              class="card__img"
+                            />
+                          </div>
+                          <div class="card-body">
+                            <p class="card-days">12 DAYS</p>
+                            <h4 class="card-title">
+                              Vietnam Luxury Adventure Travel 12 days
+                            </h4>
+                            <div class="card-desc">
+                              <p class="card-price">$1289</p>
+                              <button
+                                class="btn-tour--js btn-tour btn2 btn--size-s btn2--primary"
+                              >
+                                Booking
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col l-4 c-12 m-6">
+                        <div class="card-wrapper">
+                          <div class="card-wrapper__img">
+                            <img
+                              src="./assets/imgs/a29.jpg"
+                              alt=""
+                              class="card__img"
+                            />
+                          </div>
+                          <div class="card-body">
+                            <p class="card-days">18 DAYS</p>
+                            <h4 class="card-title">
+                              Vietnam Authentic Experience with Phu Quoc
+                              Holidays 18 days
+                            </h4>
+                            <div class="card-desc">
+                              <p class="card-price">$1289</p>
+                              <button
+                                class="btn-tour--js btn-tour btn2 btn--size-s btn2--primary"
+                              >
+                                Booking
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col l-4 c-12 m-6">
+                        <div class="card-wrapper">
+                          <div class="card-wrapper__img">
+                            <img
+                              src="./assets/imgs/a28.jpg"
+                              alt=""
+                              class="card__img"
+                            />
+                          </div>
+                          <div class="card-body">
+                            <p class="card-days">5 DAYS</p>
+                            <h4 class="card-title">
+                              Mysteries of Mekong Waterways 5 days
+                            </h4>
+                            <div class="card-desc">
+                              <p class="card-price">$1289</p>
+                              <button
+                                class="btn-tour--js btn-tour btn2 btn--size-s btn2--primary"
+                              >
+                                Booking
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col l-4 c-12 m-6">
+                        <div class="card-wrapper">
+                          <div class="card-wrapper__img">
+                            <img
+                              src="./assets/imgs/a30.jpg"
+                              alt=""
+                              class="card__img"
+                            />
+                          </div>
+                          <div class="card-body">
+                            <p class="card-days">3 DAYS</p>
+                            <h4 class="card-title">
+                              Vespa Tour & Cooking Class in Hoi An 3 Days
+                            </h4>
+                            <div class="card-desc">
+                              <p class="card-price">$289</p>
+                              <button
+                                class="btn-tour--js btn-tour btn2 btn--size-s btn2--primary"
+                              >
+                                Booking
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <footer class="footer footer-content">
+        <div class="grid wide">
+          <div class="row">
+            <div class="col l-3 m-4 c-6">
+              <h3 class="footer__heading">chăm sóc khách hàng</h3>
+              <ul class="footer-list">
+                <li class="footer-item">
+                  <a href="#" class="footer-items__link">Trung tâm trợ giúp</a>
+                </li>
+                <li class="footer-item">
+                  <a href="#" class="footer-items__link">VN-Booking Blog</a>
+                </li>
+                <li class="footer-item">
+                  <a href="#" class="footer-items__link">VN-Booking Mall</a>
+                </li>
+                <li class="footer-item">
+                  <a href="#" class="footer-items__link">Hướng Dẫn Đặt Tour</a>
+                </li>
+                <li class="footer-item">
+                  <a href="#" class="footer-items__link">Hướng Dẫn Xem Tour</a>
+                </li>
+                <li class="footer-item">
+                  <a href="#" class="footer-items__link">Thanh Toán</a>
+                </li>
+              </ul>
+            </div>
+            <div class="col l-3 m-4 c-6">
+              <h3 class="footer__heading">về VN-Booking</h3>
+              <ul class="footer-list">
+                <li class="footer-item">
+                  <a href="#" class="footer-items__link"
+                    >Giới Thiệu Về VN-Booking Việt Nam</a
+                  >
+                </li>
+                <li class="footer-item">
+                  <a href="#" class="footer-items__link">Tuyển Dụng</a>
+                </li>
+                <li class="footer-item">
+                  <a href="#" class="footer-items__link"
+                    >Điều Khoàn VN-Booking</a
+                  >
+                </li>
+                <li class="footer-item">
+                  <a href="#" class="footer-items__link">Chính Sách Bảo mật</a>
+                </li>
+                <li class="footer-item">
+                  <a href="#" class="footer-items__link">Chính Hãng</a>
+                </li>
+              </ul>
+            </div>
+            <div class="col l-3 m-4 c-6">
+              <h3 class="footer__heading">thanh toán</h3>
+              <ul class="footer-list-payment">
+                <li class="footer-item-payment">
+                  <img
+                    src="./assets/imgs/f1.png"
+                    alt=""
+                    class="footer-item-payment__img"
+                  />
+                </li>
+                <li class="footer-item-payment">
+                  <img
+                    src="./assets/imgs/f2.png"
+                    alt=""
+                    class="footer-item-payment__img"
+                  />
+                </li>
+                <li class="footer-item-payment">
+                  <img
+                    src="./assets/imgs/f7.png"
+                    alt=""
+                    class="footer-item-payment__img"
+                  />
+                </li>
+                <li class="footer-item-payment">
+                  <img
+                    src="./assets/imgs/f4.png"
+                    alt=""
+                    class="footer-item-payment__img"
+                  />
+                </li>
+                <li class="footer-item-payment">
+                  <img
+                    src="./assets/imgs/f5.png"
+                    alt=""
+                    class="footer-item-payment__img"
+                  />
+                </li>
+                <li class="footer-item-payment">
+                  <img
+                    src="./assets/imgs/f6.png"
+                    alt=""
+                    class="footer-item-payment__img"
+                  />
+                </li>
+              </ul>
+            </div>
+            <div class="col l-3 m-4 c-6">
+              <h3 class="footer__heading">theo dõi chúng tôi trên</h3>
+              <ul class="footer-list">
+                <li class="footer-item">
+                  <a href="#" class="footer-items__link">
+                    <i class="footer-item__icon fa-brands fa-facebook"></i>
+                    Facebook</a
+                  >
+                </li>
+                <li class="footer-item">
+                  <a href="#" class="footer-items__link">
+                    <i class="footer-item__icon fa-brands fa-instagram"></i>
+                    Instagram</a
+                  >
+                </li>
+                <li class="footer-item">
+                  <a href="#" class="footer-items__link">
+                    <i class="footer-item__icon fa-brands fa-linkedin"></i>
+                    Linkedln</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <div class="grid wide">
+            <p class="footer-text">
+              © 2023 Haui. Tất cả các quyền được bảo lưu.
+            </p>
+          </div>
+        </div>
+      </footer>
+      <div class="modal">
+        <div class="modal__lay"></div>
+        <div class="modal__body">
+          <!-- register-form -->
+          <div class="auth-form auth-form--register">
+            <div class="modal__container">
+              <div class="auth-form__header">
+                <h3 class="auth-form__heading">Đăng ký</h3>
+                <span class="auth-form__switch-btn switch-btnLogin--js"
+                  >Đăng nhập</span
+                >
+              </div>
+              <div class="auth-form__form">
+                <div class="auth-form__group">
+                  <input
+                    type="email"
+                    placeholder="Nhập Email"
+                    class="auth-form__input"
+                  />
+                </div>
+                <div class="auth-form__group">
+                  <input
+                    type="password"
+                    placeholder="Nhập mật khẩu"
+                    class="auth-form__input"
+                  />
+                </div>
+                <div class="auth-form__group">
+                  <input
+                    type="password"
+                    placeholder="Nhập lại mật khẩu"
+                    class="auth-form__input"
+                  />
+                </div>
+              </div>
+              <div class="auth-form__aside">
+                <p class="auth-form__policy-text">
+                  Bằng việc đăng kí, bạn đã đồng ý với VN-Booking về
+                  <a href="#" class="auth-form__text-link"
+                    >Điều khoản dịch vụ</a
+                  >
+                  &
+                  <a href="#" class="auth-form__text-link"
+                    >Chính sách bảo mật</a
+                  >
+                </p>
+              </div>
+              <div class="auth-form__controls">
+                <button
+                  class="btn btn--size-l btn--normal auth-form__controls--back btn-back--js"
+                >
+                  <p>TRỞ LẠI</p>
+                </button>
+                <button class="btn btn--size-l btn--primary">
+                  <p>ĐĂNG KÝ</p>
+                </button>
+              </div>
+            </div>
+
+            <div class="auth-form__socials">
+              <a
+                href="#"
+                class="auth-form__socials-facebook btn btn--size-s btn--icon"
+              >
+                <i
+                  class="auth-form__socials-icon fa-brands fa-square-facebook"
+                ></i>
+                <spam class="auth-form__socials-title"
+                  >Kết nối với Facebook</spam
+                ></a
+              >
+              <a
+                href="#"
+                class="auth-form__socials-google btn btn--size-s btn--icon"
+              >
+                <i class="auth-form__socials-icon">
+                  <img
+                    class="auth-form__socials-img"
+                    src="./assets/imgs/google.png"
+                    alt=""
+                  />
+                </i>
+                <spam class="auth-form__socials-title"
+                  >Kết nối với Google</spam
+                ></a
+              >
+            </div>
+          </div>
+          <!-- login-form -->
+          <div class="auth-form auth-form--login">
+            <div class="modal__container">
+              <div class="auth-form__header">
+                <h3 class="auth-form__heading">Đăng nhập</h3>
+                <span class="auth-form__switch-btn switch-btnRegister--js"
+                  >Đăng ký</span
+                >
+              </div>
+              <div class="auth-form__form">
+                <div class="auth-form__group">
+                  <input
+                    type="email"
+                    placeholder="Nhập Email"
+                    class="auth-form__input email--js"
+                  />
+                </div>
+                <div class="auth-form__group">
+                  <input
+                    type="password"
+                    placeholder="Nhập mật khẩu "
+                    class="auth-form__input pass--js"
+                  />
+                </div>
+              </div>
+              <div class="auth-form__aside-login">
+                <a href="#" class="auth-form__aside--link"> Quên mật khẩu </a>
+                <span class="auth-form__aside--separate"></span>
+                <a
+                  href="#"
+                  class="auth-form__aside--link auth-form__aside--link-forgot"
+                >
+                  Cẩn trợ giúp?
+                </a>
+              </div>
+              <div class="auth-form__controls">
+                <button
+                  class="btn btn--size-l btn--normal auth-form__controls--back btn-back--js"
+                >
+                  <p>TRỞ LẠI</p>
+                </button>
+                <a
+                  href="./manage.html"
+                  class="btn btn--size-l btn--primary btnDN--js"
+                >
+                  <p>ĐĂNG NHẬP</p>
+                </a>
+              </div>
+            </div>
+
+            <div class="auth-form__socials">
+              <a
+                href="#"
+                class="auth-form__socials-facebook btn btn--size-s btn--icon"
+              >
+                <i
+                  class="auth-form__socials-icon fa-brands fa-square-facebook"
+                ></i>
+                <spam class="auth-form__socials-title"
+                  >Kết nối với Facebook</spam
+                ></a
+              >
+              <a
+                href="#"
+                class="auth-form__socials-google btn btn--size-s btn--icon"
+              >
+                <i class="auth-form__socials-icon">
+                  <img
+                    class="auth-form__socials-img"
+                    src="./assets/imgs/google.png"
+                    alt=""
+                  />
+                </i>
+                <spam class="auth-form__socials-title"
+                  >Kết nối với Google</spam
+                ></a
+              >
+            </div>
+          </div>
+          <!-- end -->
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="./main.js"></script>
+</html>

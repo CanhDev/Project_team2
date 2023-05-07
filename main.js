@@ -44,6 +44,7 @@ var headerB_search_input = $(".header-search__input");
 headerB_search_btn.onclick = () => {
   headerB_search.classList.toggle("open-header-search");
   headerB_search_input.classList.toggle("open-header-search");
+  $("#header").classList.toggle("header-height-open");
 };
 //guide
 var guide_itemList = $$(".guide-item-wrapper");
@@ -100,3 +101,13 @@ overlayMobile.addEventListener("click", closeMenu_MB);
 items_MB.forEach((item, i) => {
   item.addEventListener("click", closeMenu_MB);
 });
+//scroll top
+
+const header_top = $(".headerT");
+const headertop_height = header_top.offsetHeight;
+document.onscroll = function () {
+  const scrollTop = window.scrollY || document.documentElement.scrollTop;
+  const newheaderheight = headertop_height - scrollTop;
+  header_top.style.height = newheaderheight > 0 ? newheaderheight + "px" : 0;
+  header_top.style.opacity = newheaderheight / headertop_height;
+};

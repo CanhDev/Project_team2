@@ -2,8 +2,15 @@
   background-color: black;
   color: var(--primary-color);
   padding-top: 8px;
+  transition: all linear 0.2s;
+  position: fixed;
+  right: 0;
+  left: 0;
+  top: 0;
+  z-index: 3;
 }
 .headerT {
+  height: var(--headerT-height);
   padding: 0px 40px;
   border-bottom: 1px solid var(--border-color);
   display: flex;
@@ -80,6 +87,7 @@
 }
 /* menu */
 .headerB {
+  height: var(--headerB-height);
 }
 .menu {
   width: 100%;
@@ -127,6 +135,7 @@
   overflow: hidden;
   transition: all linear 0.2s;
   background-color: black;
+  opacity: 0.8;
 }
 .header-search__input {
   height: 0vh;

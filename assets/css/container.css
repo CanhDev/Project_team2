@@ -1,4 +1,7 @@
 #app__container {
+  margin-top: calc(
+    var(--headerT-height) + var(--headerB-height) + 8px
+  ) !important;
 }
 .slider {
   padding-top: 32%;

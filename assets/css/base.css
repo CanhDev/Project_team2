@@ -5,8 +5,10 @@
   --text-color: #696969;
   --border-color: rgb(244, 244, 244);
   --border2-color: rgb(242, 242, 242);
-  --headertop-height: 90px;
+  --headerT-height: 108.75px;
+  --headerB-height: 49px;
   --header-search-height: 8vh;
+  --header-height--open: calc(165.75px + 8vh);
 }
 * {
   box-sizing: border-box;
@@ -35,6 +37,9 @@ html {
   to {
     opacity: 1;
   }
+}
+.header-height-open {
+  height: calc(var(--headerT-height) + var(--headerB-height) + 8px+8vh);
 }
 .not-wrap {
   flex-wrap: nowrap !important;

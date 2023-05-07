@@ -52,6 +52,9 @@
 }
 /* mobile */
 @media (max-width: 739px) {
+  :root {
+    --headerB-height: 0px;
+  }
   .open-flex {
     display: flex !important;
   }
@@ -73,7 +76,7 @@
     font-size: 3.8rem;
   }
   .overlayMB {
-    position: absolute;
+    position: fixed;
     z-index: 3;
     left: 0;
     right: 0;
