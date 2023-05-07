@@ -1,4 +1,8 @@
-var data = [];
+var data = [
+  { ID: "H1", TEN: "Hạ Long", DD: "Du lịch dài hạn", Gia: "1000000" },
+  { ID: "H2", TEN: "Hội An", DD: "Du lịch dài hạn", Gia: "2000000" },
+];
+render();
 
 function add() {
   var item_ID = document.getElementById("ID").value;
@@ -31,7 +35,7 @@ function render() {
   table = `<tr>
        <th> ID</th>
        <th>Tên tour</th>
-       <th>Địa điểm</th>
+       <th>Loại</th>
        <th>Giá</th>
        <th>Action</th>
      </tr>`;
@@ -43,8 +47,8 @@ function render() {
          <td>${data[i].DD}</td>
          <td>${data[i].Gia}</td>
          <td>
-           <button type="button" onclick="editTour(${data[i].ID})">Sửa</button>
-           <button type="button" onclick="deleteTour(${data[i].ID})">Xóa</button>
+           <button type="button" onclick="editTour('${data[i].ID}')">Sửa</button>
+           <button type="button" onclick="deleteTour('${data[i].ID}')">Xóa</button>
          </td>
        </tr>`;
   }
