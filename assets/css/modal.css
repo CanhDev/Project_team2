@@ -1,4 +1,5 @@
-.modal {
+.modal,
+.modal-2 {
   position: fixed;
   right: 0;
   left: 0;
@@ -9,21 +10,24 @@
   animation: fadeIN2 linear 0.1s;
   z-index: 3;
 }
-.modal__lay {
+.modal__lay,
+.modal-2__lay {
   position: absolute;
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.4);
   display: none;
 }
-.modal__body {
+.modal__body,
+.modal-2__body {
   --Growth-from: 0.5;
   --Growth-to: 1;
   margin: auto;
   z-index: 1;
   animation: fadeIN linear 0.2s;
 }
-.auth-form--register {
+.auth-form--register,
+.auth-form--register-2 {
   display: none;
 }
 .auth-form--login {
@@ -31,7 +35,8 @@
   transform: translateY(-40px);
 }
 /* auth-form */
-.modal__container {
+.modal__container,
+.modal-2__container {
   padding: 0 32px;
 }
 .auth-form {

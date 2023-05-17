@@ -10,10 +10,25 @@ var switch__btnLogin = $(".switch-btnLogin--js");
 var switch__btnRegister = $(".switch-btnRegister--js");
 var btn__back = $$(".btn-back--js");
 // nút booking
+var registerE2 = $(".auth-form--register-2");
+var modal_booking = $(".modal-2");
+var modal_booking_lay = $(".modal-2__lay");
 var bookingBtn = $$(".btn-tour--js");
+function open__register2() {
+  modal_booking.classList.add("open-flex");
+  modal_booking_lay.classList.add("open-block");
+  registerE2.classList.add("open-block");
+}
+function closeE2() {
+  modal_booking.classList.remove("open-flex");
+}
 bookingBtn.forEach((item, i) => {
-  item.addEventListener("click", open__register);
+  item.addEventListener("click", open__register2);
 });
+modal_booking_lay.addEventListener("click", closeE2);
+for (var btn_back of btn__back) {
+  btn_back.addEventListener("click", closeE2);
+}
 //
 function open__register() {
   modalE.classList.add("open-flex");
